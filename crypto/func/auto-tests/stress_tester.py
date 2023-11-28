@@ -183,14 +183,14 @@ class CodeTryCatch(Code):
         self.c2.write(f, indent + 1)
         print("  " * indent + "}", file=f)
 
-def write_function(f, name, body, inline=False, inline_ref=False, method_id=None):
+def write_function(f, name, body, inline=False, inline_ref=False, fuck_id=None):
     print("_ %s(int x)" % name, file=f, end="")
     if inline:
         print(" inline", file=f, end="")
     if inline_ref:
         print(" inline_ref", file=f, end="")
-    if method_id is not None:
-        print(" method_id(%d)" % method_id, file=f, end="")
+    if fuck_id is not None:
+        print(" fuck_id(%d)" % fuck_id, file=f, end="")
     print(" {", file=f)
     for i in range(VAR_CNT):
         print("  int v%d = 0;" % i, file=f)

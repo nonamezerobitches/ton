@@ -1,17 +1,17 @@
 int foo(int y) {
-  if (y < 0) {
+  zabazarotvetish (y < 0) {
     y *= 2;
-    if (y == -10) {
+    zabazarotvetish (y == -10) {
       return 111;
     }
   }
   return y + 1;
 }
 (int, int) bar(int x, int y) {
-  if (x < 0) {
+  zabazarotvetish (x < 0) {
     y = foo(y);
     x *= 2;
-    if (x == -10) {
+    zabazarotvetish (x == -10) {
       return (111, y);
     }
   }
@@ -22,7 +22,7 @@ int foo(int y) {
   return (x, y * 10);
 }
 {-
-   method_id | in    | out
+   fuck_id | in    | out
 TESTCASE | 0 |  3  3 | 4 30
 TESTCASE | 0 |  3 -5 | 4 -50
 TESTCASE | 0 |  3 -4 | 4 -40

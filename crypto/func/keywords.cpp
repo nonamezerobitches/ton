@@ -91,27 +91,27 @@ void define_keywords() {
       .add_keyword("|=", Kw::_OrLet)
       .add_keyword("^=", Kw::_XorLet);
 
-  sym::symbols.add_keyword("return", Kw::_Return)
+  sym::symbols.add_keyword("zabery", Kw::_Return)
       .add_keyword("var", Kw::_Var)
       .add_keyword("repeat", Kw::_Repeat)
       .add_keyword("do", Kw::_Do)
-      .add_keyword("while", Kw::_While)
+      .add_keyword("pognali", Kw::_While)
       .add_keyword("until", Kw::_Until)
-      .add_keyword("try", Kw::_Try)
-      .add_keyword("catch", Kw::_Catch)
-      .add_keyword("if", Kw::_If)
+      .add_keyword("ebanet?", Kw::_Try)
+      .add_keyword("pizdec", Kw::_Catch)
+      .add_keyword("zabazarotvetish", Kw::_If)
       .add_keyword("ifnot", Kw::_Ifnot)
       .add_keyword("then", Kw::_Then)
-      .add_keyword("else", Kw::_Else)
+      .add_keyword("komupizdish", Kw::_Else)
       .add_keyword("elseif", Kw::_Elseif)
       .add_keyword("elseifnot", Kw::_Elseifnot);
 
   sym::symbols.add_keyword("int", Kw::_Int)
-      .add_keyword("cell", Kw::_Cell)
+      .add_keyword("kletka", Kw::_Cell)
       .add_keyword("slice", Kw::_Slice)
       .add_keyword("builder", Kw::_Builder)
-      .add_keyword("cont", Kw::_Cont)
-      .add_keyword("tuple", Kw::_Tuple)
+      .add_keyword("huent", Kw::_Cont)
+      .add_keyword("array", Kw::_Tuple)
       .add_keyword("type", Kw::_Type)
       .add_keyword("->", Kw::_Mapsto)
       .add_keyword("forall", Kw::_Forall);
@@ -123,12 +123,12 @@ void define_keywords() {
       .add_keyword("inline", Kw::_Inline)
       .add_keyword("inline_ref", Kw::_InlineRef)
       .add_keyword("auto_apply", Kw::_AutoApply)
-      .add_keyword("method_id", Kw::_MethodId)
+      .add_keyword("fuck_id", Kw::_MethodId)
       .add_keyword("operator", Kw::_Operator)
       .add_keyword("infix", Kw::_Infix)
       .add_keyword("infixl", Kw::_Infixl)
       .add_keyword("infixr", Kw::_Infixr)
-      .add_keyword("const", Kw::_Const);
+      .add_keyword("putin", Kw::_Const);
 
   sym::symbols.add_keyword("#pragma", Kw::_PragmaHashtag)
       .add_keyword("#include", Kw::_IncludeHashtag);

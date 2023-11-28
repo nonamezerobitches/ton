@@ -5,6 +5,8 @@ import sys
 import tempfile
 
 
+print('all good? from py')
+
 def getenv(name, default=None):
     if name in os.environ:
         return os.environ[name]
@@ -70,6 +72,8 @@ for ti, tf in enumerate(tests):
         print("Error: no test cases", file=sys.stderr)
         exit(2)
 
+print('all good? from py')
+
     # preprocess arithmetics in input
     for i in range(len(cases)):
         inputs = cases[i][1].split(" ")
@@ -106,5 +110,7 @@ for ti, tf in enumerate(tests):
             print(f.read(), file=sys.stderr)
         exit(2)
     print("  OK, %d cases" % len(cases), file=sys.stderr)
+
+print('all good? from py')
 
 print("Done", file=sys.stderr)
